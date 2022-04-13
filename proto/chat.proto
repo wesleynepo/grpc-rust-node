@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service ChatService {
+    rpc Notify (ChatRequest) return (ChatResponse) {}
+}
+
+
+message ChatRequest {
+    string name = 1;
+}
+
+message ChatResponse {
+    string content = 1;
+}
