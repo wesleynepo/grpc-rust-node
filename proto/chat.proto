@@ -1,7 +1,9 @@
 syntax = "proto3";
 
-service ChatService {
-    rpc Notify (ChatRequest) return (ChatResponse) {}
+package chat;
+
+service Chat {
+    rpc Poop (ChatRequest) returns (ChatResponse) {}
 }
 
 
